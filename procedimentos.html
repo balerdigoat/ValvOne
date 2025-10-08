@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedimentos - Válvula MV1-001</title>
+    <!-- Inclua o link para o seu arquivo CSS principal aqui. 
+         No seu ambiente, este arquivo é o 'styles.css' que você acabou de editar. -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos específicos para a página de Procedimentos */
+        .procedure-section {
+            padding: 20px 0;
+            border-bottom: 1px dashed var(--clr-border);
+        }
+        .procedure-section:last-child {
+            border-bottom: none;
+        }
+        .procedure-section h3 {
+            color: var(--clr-dark);
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            border-left: 4px solid var(--clr-accent);
+            padding-left: 10px;
+        }
+        .procedure-section p {
+            margin-bottom: 15px;
+            font-size: 0.95em;
+            color: var(--clr-text-main);
+        }
+        .procedure-section strong {
+            color: var(--clr-dark-light);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CABEÇALHO (2. Cabeçalho e Navegação) -->
+    <header class="site-header">
+        <div class="brand">
+            <span class="logo">VALV ONE</span>
+            <span class="subtitle">Gestão de Ativos Industriais</span>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Dashboard</a>
+            <a href="informacoes.html">Informações Técnicas</a>
+            <a href="procedimentos.html">Procedimentos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL (3. Layout de Conteúdo Comum) -->
+    <main class="content">
+        <h1>Procedimentos de Manutenção e Gestão</h1>
+        <p class="center" style="margin-bottom: 30px; color: var(--clr-text-sub);">Detalhes sobre os requisitos de confiabilidade, certificação e documentação para a Válvula MV1-001.</p>
+
+        <!-- Seção de Requisitos Gerais -->
+        <div class="procedure-section">
+            <h2>Requisitos Gerais</h2>
+            
+            <h3>Manutenção Centrada em Confiabilidade (RCM)</h3>
+            <p><strong>Descrição:</strong> Equipamentos críticos devem ter manutenção baseada em confiabilidade, minimizando riscos e custos.</p>
+            <p><strong>Requisito:</strong> Realizar análise RCM completa a cada 5 anos ou após grandes modificações no sistema. Priorizar a manutenção preditiva com base nos dados do sensor IIoT.</p>
+        
+            <h3>Certificação e Inspeção</h3>
+            <p><strong>Descrição:</strong> Equipamentos devem atender normas internacionais (API) e passar por inspeção de fabricação com aprovação do Plano de Inspeção e Testes (PIT).</p>
+            <p><strong>Requisito:</strong> Todos os componentes de substituição devem possuir certificação API 600 ou equivalente. Manter registros auditáveis de todas as inspeções.</p>
+        </div>
+
+        <!-- Seção de Procedimentos de Manutenção -->
+        <div class="procedure-section">
+            <h2>Procedimentos de Manutenção</h2>
+
+            <h3>Plano de Manutenção</h3>
+            <p><strong>Descrição:</strong> Inclui operação, manutenção preventiva/corretiva e monitoramento de desempenho.</p>
+            <p><strong>Ações Chave:</strong> Lubrificação do atuador a cada 6 meses. Inspeção visual da haste a cada 3 meses. Calibração do posicionador a cada ano.</p>
+        
+            <h3>Execução de Serviços</h3>
+            <p><strong>Descrição:</strong> Serviços técnicos e inspeções devem seguir especificações técnicas, podendo usar **ROVs** (Remotely Operated Vehicles) para sistemas submarinos.</p>
+            <p><strong>Ações Chave:</strong> Sempre seguir a lista de verificação (checklist) MV1-001. Qualquer desvio deve ser documentado e aprovado pelo Engenheiro de Confiabilidade.</p>
+            
+            <h3>Gestão da Qualidade</h3>
+            <p><strong>Descrição:</strong> Fornecedores devem ser auditados e cumprir requisitos técnicos e contratuais.</p>
+            <p><strong>Requisito:</strong> Somente usar fornecedores homologados. Documentar a procedência e qualidade de todas as peças de reposição.</p>
+        </div>
+        
+        <!-- Seção de Documentação -->
+        <div class="procedure-section">
+            <h2>Documentação</h2>
+
+            <h3>Documentos de Engenharia</h3>
+            <p><strong>Descrição:</strong> Desenhos, especificações e relatórios devem ser mantidos atualizados.</p>
+            <p><strong>Requisito:</strong> As-builts devem ser revisados após qualquer manutenção corretiva que envolva modificação de componentes.</p>
+
+            <h3>Relatórios de Serviços</h3>
+            <p><strong>Descrição:</strong> Incluem certificados e informações técnicas dos componentes instalados.</p>
+            <p><strong>Requisito:</strong> O relatório final do serviço deve ser arquivado digitalmente e conter a assinatura do técnico responsável e o número de série das peças instaladas.</p>
+        </div>
+
+    </main>
+
+    <!-- RODAPÉ (7. Rodapé) -->
+    <footer class="site-footer">
+        &copy; 2025 ValvOne - Gestão de Ativos. Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
