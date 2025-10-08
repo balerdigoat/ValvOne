@@ -1,0 +1,389 @@
+:root {
+    /* Cores */
+    --clr-dark: #0f172a;
+    --clr-dark-light: #1e293b;
+    --clr-accent: #38bdf8;
+    --clr-text-main: #111827;
+    --clr-text-sub: #64748b;
+    --clr-background: #f8fafc;
+    --clr-surface: #ffffff;
+    --clr-border: #e5e7eb;
+
+    /* Espaçamento e Borda */
+    --spacing-default: 16px;
+    --radius-default: 10px;
+}
+
+/* 1. Reset e Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+    background: var(--clr-background);
+    color: var(--clr-text-main);
+    line-height: 1.6;
+}
+
+/* 2. Cabeçalho e Navegação */
+.site-header {
+    background: linear-gradient(90deg, var(--clr-dark) 0%, var(--clr-dark-light) 100%);
+    color: var(--clr-surface);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.brand {
+    display: flex;
+    flex-direction: column;
+}
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+.subtitle {
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #cbd5e1;
+    margin-left: var(--spacing-default);
+    font-weight: 600;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+}
+.main-nav a:hover,
+.main-nav a:focus {
+    color: var(--clr-accent);
+    border-color: var(--clr-accent);
+    outline: none;
+}
+
+/* 3. Layout de Conteúdo Comum (Index Page) */
+.hero, .content {
+    max-width: 960px;
+    margin: 40px auto;
+    background: var(--clr-surface);
+    padding: 30px;
+    border-radius: var(--radius-default);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+.center { text-align: center; }
+
+/* 4. Cartões */
+.card-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+.card {
+    background: #f9fbfd;
+    border: 1px solid var(--clr-border);
+    padding: var(--spacing-default);
+    border-radius: var(--radius-default);
+    flex: 1 1 280px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Links Rápidos em Cartões */
+.card .quick-links {
+    margin-top: 15px;
+}
+
+/* Estilo do botão */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: var(--clr-dark);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.btn.block {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: var(--clr-dark-light);
+}
+
+/* 5. Lista e Tabela (Seções Específicas) */
+.doc-list {
+    margin-top: 20px;
+    list-style: none;
+}
+.doc-list li {
+    margin-bottom: 10px;
+    border-bottom: 1px dashed var(--clr-border);
+    padding-bottom: 5px;
+}
+.doc-list a {
+    color: var(--clr-dark);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+.doc-list a:hover {
+    color: var(--clr-accent);
+    text-decoration: underline;
+}
+
+.maint-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.maint-table th, .maint-table td {
+    border: 1px solid var(--clr-border);
+    padding: 12px 15px;
+    font-size: 15px;
+    text-align: left;
+}
+.maint-table th {
+    background: #f1f5f9;
+    color: var(--clr-text-main);
+}
+.maint-table tr:nth-child(even) {
+    background: #fcfdfe;
+}
+
+/* 6. Rodapé */
+.site-footer {
+    text-align: center;
+    padding: 25px;
+    color: var(--clr-text-sub);
+    font-size: 13px;
+    border-top: 1px solid var(--clr-border);
+    margin-top: 50px;
+}
+
+/* ======================================= */
+/* 7. Layout ESPECÍFICO (informacoes.html) */
+/* ======================================= */
+
+/* Container de Duas Colunas */
+.content-detail.two-col {
+    display: flex;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 30px;
+    gap: 30px; 
+}
+
+/* Coluna Esquerda: Área Visual */
+.visual-area {
+    flex: 2;
+    background-color: var(--clr-surface);
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: var(--radius-default);
+    min-height: 700px;
+}
+
+/* Contêiner da Imagem/Anotações */
+.canvas {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo da Imagem da Válvula */
+.valve-illustration {
+    max-width: 70%; 
+    height: auto;
+    display: block;
+}
+
+/* Coluna Direita: Painel de Informações */
+.info-panel {
+    flex: 1;
+    background-color: var(--clr-surface);
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: var(--radius-default);
+}
+
+/* --- ESTILOS CORRIGIDOS PARA O PAINEL DE INFORMAÇÕES --- */
+
+/* Caixa de Identificação (Nome/Tag) - CORRIGIDA */
+.technical-id-box {
+    border: 1px solid var(--clr-border);
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 25px;
+    background: #fcfdfe;
+}
+
+.info-panel .info-row {
+    display: flex;
+    justify-content: space-between; /* Alinha o conteúdo nas extremidades */
+    width: 100%; /* Garante que ocupe a largura total */
+}
+
+.info-panel .info-row:first-child {
+    font-size: 0.8em;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed var(--clr-border);
+    margin-bottom: 5px;
+}
+
+.panel-block h2 {
+    color: var(--clr-dark);
+    border-bottom: 2px solid var(--clr-border);
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+/* Tabela de Especificações (.spec-table) - CORRIGIDA */
+.spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95em;
+}
+
+.spec-table caption {
+    display: none; /* Esconde a legenda, mas mantém para acessibilidade */
+}
+
+.spec-table tr {
+    border-bottom: 1px solid #f1f5f9; /* Separador sutil entre linhas */
+}
+
+.spec-table tr:last-child {
+    border-bottom: none;
+}
+
+.spec-table th, .spec-table td {
+    padding: 8px 0;
+    text-align: left;
+}
+
+.spec-table th {
+    font-weight: 600;
+    color: var(--clr-text-sub);
+    width: 45%; /* Define a largura para o cabeçalho (rótulo) */
+}
+
+.spec-table td {
+    color: var(--clr-text-main);
+    width: 55%; /* Define a largura para o dado (valor) */
+    text-align: right; /* Alinha o valor à direita */
+}
+
+/* Estilos e Posicionamento das ANOTAÇÕES (anno) */
+.anno {
+    position: absolute;
+    width: 250px;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    font-size: 0.9em;
+    line-height: 1.4;
+    z-index: 10;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.anno:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+/* Cores de status */
+.anno.green {
+    background-color: #f1fef1;
+    border-left: 5px solid #4CAF50;
+    color: #0c3d0f;
+}
+
+.anno.yellow {
+    background-color: #fffdf1;
+    border-left: 5px solid #FFC107;
+    color: #5f4a0a;
+}
+
+.anno.red {
+    background-color: #fef1f1;
+    border-left: 5px solid #F44336;
+    color: #791c18;
+}
+
+/* Posições */
+.anno-left {
+    top: 35%; 
+    left: 5%;
+}
+
+.anno-top {
+    top: 5%;
+    right: 15%;
+}
+
+.anno-right {
+    top: 55%;
+    right: 5%;
+}
+
+
+/* 8. Responsividade */
+@media (max-width: 950px) { 
+    .content-detail.two-col {
+        flex-direction: column; 
+        padding: 0 20px;
+    }
+    .visual-area {
+        min-height: 500px;
+        margin-bottom: 20px;
+    }
+    .valve-illustration {
+        max-width: 90%;
+    }
+    .anno {
+        width: 90%;
+        position: static;
+        margin: 10px auto;
+        border-left: none;
+        border-top: 5px solid;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transform: none;
+    }
+    .anno-left, .anno-top, .anno-right {
+        top: auto;
+        left: auto;
+        right: auto;
+    }
+
+    .main-nav {
+        display: none; 
+    }
+    .hero, .content {
+        margin: 20px;
+        padding: 20px;
+    }
+    .card-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
