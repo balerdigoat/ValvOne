@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ValvOne - Informações Técnicas da Válvula MV1-001</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <div class="logo">ValvOne</div>
+            <div class="subtitle">INFORMAÇÕES • MANUAIS • PROCEDIMENTOS • MANUTENÇÕES</div>
+        </div>
+        <nav class="main-nav" role="navigation" aria-label="Navegação Principal do Site">
+            <!-- Corrigido o INÍCIO para apontar para index.html -->
+            <a href="index.html">INÍCIO</a> 
+            <a href="manutencoes.html">MANUTENÇÕES</a>
+            <a href="ajuda.html">AJUDA</a>
+        </nav>
+    </header>
+
+    <main class="content-detail two-col">
+        <!-- Coluna Esquerda: Área Visual -->
+        <section class="visual-area">
+            <div class="canvas">
+                <!-- CONFIRMADO: Caminho da imagem correto. Se a imagem não aparecer, o problema é o nome/localização do arquivo físico. -->
+                <img src="https://fluxo.si/wp-content/uploads/2021/07/valvulas-de-controle-de-processo-41005-Series-HR.jpg" alt="Ilustração da Válvula MV1-001 com indicadores de status e diagnóstico." class="valve-illustration" />
+        
+                <!-- Anotações de Status -->
+                <div class="anno anno-left green" aria-labelledby="haste-status">
+                    <p id="haste-status"><strong>Haste e atuador</strong></p>
+                    <p>Resposta normal — pequena chance de anomalia.</p>
+                </div>
+
+                <div class="anno anno-top yellow" aria-labelledby="atrito-status">
+                    <p id="atrito-status"><strong>Atrito excessivo</strong></p>
+                    <p>Acúmulo de partículas — exige inspeção preventiva.</p>
+                </div>
+
+                <div class="anno anno-right red" aria-labelledby="vazamento-status">
+                    <p id="vazamento-status"><strong>Vazamento no selo da haste</strong></p>
+                    <p>Alta probabilidade se houver queda de pressão.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coluna Direita: Painel de Informações -->
+        <aside class="info-panel" aria-label="Dados e Observações Técnicas">
+            <div class="technical-id-box">
+                <div class="info-row"><span class="muted">Nome da Válvula</span><span class="muted">Tag</span></div>
+                <div class="info-row"><strong>Válvula 1</strong><strong>MV1-001</strong></div>
+            </div>
+
+            <div class="panel-block">
+                <h2>Dados Técnicos</h2>
+                <table class="spec-table">
+                    <caption>Especificações da Válvula MV1-001</caption>
+                    <tr><th>Fabricante / Modelo</th><td>Masoneilan (Baker Hughes / GE)</td></tr>
+                    <tr><th>Ano de Instalação</th><td>2018</td></tr>
+                    <tr><th>Ano de Início de Operação</th><td>2019</td></tr>
+                    <tr><th>Tempo de Operação (até 2025)</th><td>~6 anos</td></tr>
+                </table>
+            </div>
+
+            <div class="panel-block">
+                <h2>Observações</h2>
+                <p>Instalada na linha principal de controle de fluxo; passou por retrofit em 2024 com sensor IoT EMD-X.</p>
+            </div>
+
+            <a class="btn block" href="index.html">🔙 Voltar ao Início</a>
+        </aside>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 ValvOne - Documentação e Suporte Técnico</p>
+    </footer>
+</body>
+</html>
