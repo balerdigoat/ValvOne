@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ajuda e Suporte - ValvOne</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    
+    <!-- CABEÇALHO (2. Cabeçalho e Navegação) -->
+    <header class="site-header">
+        <div class="brand">
+            <span class="logo">VALV ONE</span>
+            <span class="subtitle">Gestão de Ativos Industriais</span>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Dashboard</a>
+            <a href="informacoes.html">Informações Técnicas</a>
+            <a href="procedimentos.html">Procedimentos</a>
+            <a href="ajuda.html" aria-current="page">Ajuda</a>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL: Layout de Duas Colunas (igual ao 'informacoes.html') -->
+    <main class="content-detail two-col">
+        
+        <!-- COLUNA ESQUERDA: Imagem Proporcional -->
+        <section class="visual-area">
+            <div class="canvas" style="min-height: 500px;">
+                <!-- Usamos a mesma imagem da válvula para referência -->
+                <img src="https://fluxo.si/wp-content/uploads/2021/07/valvulas-de-controle-de-processo-41005-Series-HR.jpg" alt="Ilustração da Válvula MV1-001" class="valve-illustration" />
+            </div>
+        </section>
+
+        <!-- COLUNA DIREITA: Painel de Informações e Suporte -->
+        <aside class="info-panel" aria-label="Dados de Contato e Procedimentos de Suporte">
+            
+            <!-- Caixa de Identificação (Arrumada pelo CSS .technical-id-box) -->
+            <div class="technical-id-box">
+                <div class="info-row"><span class="muted">Nome da Válvula</span><span class="muted">Tag</span></div>
+                <div class="info-row"><strong>Válvula 1</strong><strong>MV1-001</strong></div>
+            </div>
+
+            <div class="panel-block">
+                <h1>AJUDA E SUPORTE</h1>
+
+                <!-- Contato Rápido -->
+                <h2>Contato Rádio para Suporte Imediato</h2>
+                
+                <table class="spec-table">
+                    <tr><th>Válvula</th><td>MV1</td></tr>
+                    <tr><th>Endereço Rádio</th><td>RP-TR-V01</td></tr>
+                    <tr><th>Canal</th><td>Ch. 16 (padrão)</td></tr>
+                </table>
+            </div>
+            
+            <div class="panel-block">
+                <!-- Procedimento Rápido -->
+                <h2>Procedimento Rápido (Ação Imediata)</h2>
+                <ol style="margin-left: 20px; font-size: 0.95em; list-style-type: decimal;">
+                    <li>Isolar a linha e despressurizar a seção.</li>
+                    <li>Avaliar fuga e confirmar necessidade de intervenção.</li>
+                    <li>Acionar equipe de manutenção via rádio (RP-TR-V01).</li>
+                </ol>
+            </div>
+
+            <a class="btn block" href="index.html">🔙 Voltar ao Início</a>
+        </aside>
+    </main>
+
+    <!-- RODAPÉ (7. Rodapé) -->
+    <footer class="site-footer">
+        &copy; 2025 ValvOne - Documentação e Suporte Técnico
+    </footer>
+</body>
+</html>
