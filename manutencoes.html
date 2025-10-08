@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Registro de Manutenções - ValvOne</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    
+    <!-- CABEÇALHO (2. Cabeçalho e Navegação) -->
+    <header class="site-header">
+        <div class="brand">
+            <span class="logo">VALV ONE</span>
+            <span class="subtitle">Gestão de Ativos Industriais</span>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Dashboard</a>
+            <a href="informacoes.html">Informações Técnicas</a>
+            <a href="procedimentos.html">Procedimentos</a>
+            <a href="ajuda.html">Ajuda</a>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL: Layout de Duas Colunas -->
+    <main class="content-detail two-col">
+        
+        <!-- COLUNA ESQUERDA: Imagem Proporcional -->
+        <section class="visual-area">
+            <div class="canvas" style="min-height: 500px;">
+                <!-- Imagem da válvula (garantida pelo .valve-illustration no CSS) -->
+                <img src="https://fluxo.si/wp-content/uploads/2021/07/valvulas-de-controle-de-processo-41005-Series-HR.jpg" alt="Ilustração da Válvula MV1-001" class="valve-illustration" />
+            </div>
+        </section>
+
+        <!-- COLUNA DIREITA: Painel de Dados e Tabela -->
+        <aside class="info-panel" aria-label="Histórico de Manutenções Registradas">
+            
+            <!-- Caixa de Identificação (Arrumada pelo CSS .technical-id-box) -->
+            <div class="technical-id-box">
+                <div class="info-row"><span class="muted">Nome da Válvula</span><span class="muted">Tag</span></div>
+                <div class="info-row"><strong>Válvula 1</strong><strong>MV1-001</strong></div>
+            </div>
+
+            <div class="panel-block">
+                <h1>REGISTRO DE MANUTENÇÕES</h1>
+                <p style="color: var(--clr-text-sub); margin-bottom: 20px;">Histórico detalhado de intervenções e status de solução.</p>
+                
+                <!-- Tabela de Manutenção (usa .maint-table e .spec-table do CSS) -->
+                <table class="maint-table">
+                    <caption>Histórico de Manutenções da Válvula MV1-001</caption>
+                    <thead>
+                        <tr>
+                            <th>Válvula</th>
+                            <th>Data da Ocorrência</th>
+                            <th>Problema Detectado</th>
+                            <th>Ação Executada</th>
+                            <th>Status da Solução</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>V1</td>
+                            <td>14/08/2023</td>
+                            <td>Vazamento no selo da haste — queda de pressão.</td>
+                            <td>Substituição do selo e reaperto da conexão.</td>
+                            <td><span style="color: #4CAF50;">✅ Resolvido totalmente</span></td>
+                        </tr>
+                        <tr>
+                            <td>V1</td>
+                            <td>20/02/2024</td>
+                            <td>Atrito excessivo na haste — acúmulo de partículas.</td>
+                            <td>Limpeza com solvente e reaplicação de graxa sintética.</td>
+                            <td><span style="color: #4CAF50;">✅ Resolvido totalmente</span></td>
+                        </tr>
+                        <tr>
+                            <td>V1</td>
+                            <td>01/06/2025</td>
+                            <td>Vibração acima do limite (necessita inspeção).</td>
+                            <td>Instalação de novo anel de balanceamento.</td>
+                            <td><span style="color: #FFC107;">⚠️ Parcialmente resolvido</span></td>
+                        </tr>
+                        <tr>
+                            <td>V1</td>
+                            <td>05/07/2025</td>
+                            <td>Falha de comunicação do sensor EMD-X.</td>
+                            <td>Aguardando troca do módulo IoT.</td>
+                            <td><span style="color: #F44336;">❌ Pendente</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <a class="btn block" href="index.html">🔙 Voltar ao Início</a>
+        </aside>
+    </main>
+
+    <!-- RODAPÉ (7. Rodapé) -->
+    <footer class="site-footer">
+        &copy; 2025 ValvOne - Documentação e Suporte Técnico
+    </footer>
+</body>
+</html>
