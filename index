@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ValvOne - Início</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <div class="logo">ValvOne</div>
+            <div class="subtitle">INFORMAÇÕES • MANUAIS • PROCEDIMENTOS • MANUTENÇÕES</div>
+        </div>
+        <nav class="main-nav" role="navigation" aria-label="Navegação Principal">
+            <a href="informacoes.html">INFORMAÇÕES</a>
+            <a href="manutencoes.html">MANUTENÇÕES</a>
+            <a href="ajuda.html">AJUDA</a>
+        </nav>
+    </header>
+
+    <main> 
+        <section class="hero center">
+            <h1>Bem-vindo à ValvOne</h1>
+            <p>Aqui você encontra todas as informações técnicas, manuais, procedimentos e registros de manutenção para a válvula MV1-001.</p>
+        </section>
+        
+        <section class="content">
+            <h2>Acesso Rápido</h2>
+            
+            <div class="card-grid">
+                
+                <div class="card">
+                    <h3>Informações da Válvula</h3>
+                    <p>Veja dados técnicos, estado atual e ilustrações.</p>
+                    <div class="quick-links">
+                        <a class="btn" href="informacoes.html">Ver Detalhes Técnicos</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Registro de Manutenções</h3>
+                    <p>Consulte o histórico completo de intervenções e procedimentos.</p>
+                    <div class="quick-links">
+                        <a class="btn" href="manutencoes.html">Ver Histórico</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Ajuda e Suporte</h3>
+                    <p>Encontre manuais, procedimentos e contatos de emergência.</p>
+                    <div class="quick-links">
+                        <a class="btn" href="ajuda.html">Acessar Ajuda</a>
+                    </div>
+                </div>
+                
+                <div class="card summary-card">
+                    <h4>Válvula em Foco</h4>
+                    <p><strong>Nome:</strong> Válvula 1</p>
+                    <p><strong>Tag:</strong> MV1-001</p>
+                    <p class="subtitle">Equipamento crítico da linha de controle de fluxo.</p>
+                </div>
+
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer class="site-footer">
+        <p>© 2025 ValvOne - Suporte Técnico e Engenharia</p>
+    </footer>
+</body>
+</html>
